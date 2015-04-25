@@ -24,5 +24,3 @@ def convert_from_date(from_date, to_format, to_type=str):
         return converter.date_to_string(from_date, to_format)
     elif to_type == datetime:
         return converter.date_to_datetime(from_date)
-#print convert_from_string('20/02/2012', '%d/%m/%Y', '%d-%m', date)
-#print convert_from_datetime(convert_from_string('20/02/2012', '%d/%m/%Y', '%d-%m', datetime),'%m-%d', datetime)
