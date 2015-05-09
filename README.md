@@ -113,3 +113,7 @@ timestamp_to_string(timestamp, to_format)
 ### Contribution guidelines ###
 
 * Every help or suggestion is welcome.
+
+### License ###
+
+* Code and documentation are available according to the MIT License (see LICENSE.md).

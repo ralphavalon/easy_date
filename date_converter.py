@@ -1,7 +1,7 @@
 from datetime import datetime
 import time
 
-class Converter:
+class Date_Converter:
 
     date_default_format = '%Y-%m-%d'
 

@@ -3,7 +3,7 @@ from csv import excel
 __author__ = 'ralphavalon' #Ralph Avalon
 
 import unittest
-from converter import Converter
+from date_converter import Date_Converter
 from datetime import datetime, date
 
 class ConverterTest(unittest.TestCase):
@@ -20,7 +20,7 @@ class ConverterTest(unittest.TestCase):
     expected_datetime_timestamp = 1423973700.0
 
     def setUp(self):
-        self.converter = Converter()
+        self.converter = Date_Converter()
 
     def test_date_to_datetime(self):
         result = self.converter.date_to_datetime(self.test_date)

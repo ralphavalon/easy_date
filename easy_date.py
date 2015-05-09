@@ -1,7 +1,7 @@
 from datetime import date, datetime
-from converter import Converter
+from date_converter import Date_Converter
 
-converter = Converter()
+converter = Date_Converter()
 
 def convert_from_string(string, current_format, to_format, to_type=str):
     if to_type == str:
