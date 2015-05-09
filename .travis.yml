@@ -7,4 +7,5 @@ python:
   - "3.4"
 install:
   - pip install -r requirements.txt
+  - ntpdate a.ntp.br
 script: coverage run tests.py
