@@ -7,8 +7,8 @@ Copyright (c) 2015, Raphael Amoedo.
 License: MIT (see LICENSE.md for details)
 """
 
-__author__ = 'Raphael Amoedo'
-__version__ = '0.1.0'
+__author__ = 'Raphael Amoedo' #a.k.a. Ralph Avalon
+__version__ = '0.1.2'
 __license__ = 'MIT'
 
 from datetime import date, datetime

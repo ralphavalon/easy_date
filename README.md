@@ -1,5 +1,8 @@
 # Easy_Date #
 
+https://github.com/ralphavalon/easy_date
+https://pypi.python.org/pypi/easy-date
+
 Let's face it: there's no JodaTime for Python, and dealing with date, datetime, timestamp in Python it's not very readable or easy to understand. Easy_date can convert between str, date, datetime and timestamp easily for you and it is readable.
 
 ### Example - String to String ###

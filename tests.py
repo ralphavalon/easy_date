@@ -1,6 +1,4 @@
-from csv import excel
-
-__author__ = 'ralphavalon' #Ralph Avalon
+__author__ = 'Raphael Amoedo' #a.k.a. Ralph Avalon
 
 import unittest
 from date_converter import Date_Converter

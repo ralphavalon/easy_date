@@ -3,7 +3,7 @@ import easy_date
 
 setup(
     # Application name:
-    name="easy_date",
+    name="easy-date",
 
     # Version number (initial):
     version=easy_date.__version__,
@@ -13,6 +13,7 @@ setup(
     author_email="avalon.ralph@gmail.com",
 
     # Scripts
+    py_modules=["easy_date", "date_converter"],
     scripts=["easy_date.py", "date_converter.py"],
 
 
@@ -20,10 +21,10 @@ setup(
     #include_package_data=True,
 
     # Details
-    url="http://pypi.python.org/pypi/easy_date/",
+    url="http://pypi.python.org/pypi/easy-date/",
 
     #
-    license="LICENSE.md",
+    license="MIT",
     description="Easy and readable way to convert dates.",
 
 )

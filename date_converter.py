@@ -7,7 +7,7 @@ Copyright (c) 2015, Raphael Amoedo.
 License: MIT (see LICENSE.md for details)
 """
 
-__author__ = 'Raphael Amoedo'
+__author__ = 'Raphael Amoedo' #a.k.a. Ralph Avalon
 __license__ = 'MIT'
 
 from datetime import datetime
