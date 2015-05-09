@@ -1,12 +1,12 @@
 __author__ = 'Raphael Amoedo' #a.k.a. Ralph Avalon
 
 import unittest
-from date_converter import Date_Converter
+import date_converter as converter
 from datetime import datetime, date
 
 class ConverterTest(unittest.TestCase):
 
-    converter = None
+    converter = converter
     expected_minutes = expected_day = 15
     expected_hour = expected_month = 2
     expected_year = 2015
@@ -16,9 +16,6 @@ class ConverterTest(unittest.TestCase):
     expected_format = '%d-%d-%02d' % (expected_year, expected_day, expected_month)
     test_timestamp = expected_timestamp = 1423965600.0
     expected_datetime_timestamp = 1423973700.0
-
-    def setUp(self):
-        self.converter = Date_Converter()
 
     def test_date_to_datetime(self):
         result = self.converter.date_to_datetime(self.test_date)

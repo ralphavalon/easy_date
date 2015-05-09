@@ -56,9 +56,8 @@ my_date = easy_date.convert_from_string(str_date, '%d/%m/%Y', None, date)
 
 ```
 from datetime import date, datetime
-from date_converter import Date_Converter
+import date_converter
 
-date_converter = Date_Converter()
 str_date = '25/12/2014' #%d/%m/%Y
 
 #string_to_string(string, current_format, to_format)

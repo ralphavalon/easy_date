@@ -8,13 +8,11 @@ License: MIT (see LICENSE.md for details)
 """
 
 __author__ = 'Raphael Amoedo' #a.k.a. Ralph Avalon
-__version__ = '0.1.2'
+__version__ = '0.1.3'
 __license__ = 'MIT'
 
 from datetime import date, datetime
-from date_converter import Date_Converter
-
-converter = Date_Converter()
+import date_converter as converter
 
 def convert_from_string(string, current_format, to_format, to_type=str):
     if to_type == str:
