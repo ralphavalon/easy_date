@@ -1,0 +1,5 @@
+include easy_date.py
+include date_converter.py
+include setup.py
+include README.md
+include LICENSE.md

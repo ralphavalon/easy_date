@@ -1,3 +1,15 @@
+#!/usr/bin/env python
+"""
+Easy_date is a simple converter that manipulates date, datetime, timestamp and str dates. It has no dependencies other than the
+Python Standard Library.
+
+Copyright (c) 2015, Raphael Amoedo.
+License: MIT (see LICENSE.md for details)
+"""
+
+__author__ = 'Raphael Amoedo'
+__license__ = 'MIT'
+
 from datetime import datetime
 import time
 
