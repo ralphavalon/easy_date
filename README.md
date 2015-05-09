@@ -123,6 +123,17 @@ timestamp_to_string(timestamp, to_format)
 
 ```
 
+### Development ###
+
+* All tests were executed using Brazil (America/Sao_Paulo) timezone. So, if you're not on this timezone and want to run tests, you can do:
+
+```
+sudo ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
+```
+
+* You can back to your timezone using the same way.
+* You can take a look on **travis_setup.sh**.
+
 ### Contribution guidelines ###
 
 * Every help or suggestion is welcome.
