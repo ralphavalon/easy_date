@@ -5,6 +5,7 @@ python:
   - "3.2"
   - "3.3"
   - "3.4"
+sudo: required
 install:
   - pip install -r requirements.txt
   - bash travis_setup.sh
