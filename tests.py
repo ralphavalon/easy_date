@@ -10,7 +10,7 @@ class ConverterTest(unittest.TestCase):
 
     converter = None
     expected_minutes = expected_day = 15
-    expected_hour = expected_month = 02
+    expected_hour = expected_month = 2
     expected_year = 2015
     test_date = date(expected_year, expected_month, expected_day)
     test_date_string = '%d/%02d/%d' % (expected_day, expected_month, expected_year)
