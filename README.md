@@ -1,11 +1,10 @@
-# README #
+# Easy_Date #
 
 Let's face it: there's no JodaTime for Python, and dealing with date, datetime, timestamp in Python it's not very readable or easy to understand. Easy_date can convert between str, date, datetime and timestamp easily for you and it is readable.
 
 ### Example - String to String ###
 
 ```
-#!python
 import easy_date
 
 str_date = '25/12/2014' #%d/%m/%Y
@@ -25,7 +24,7 @@ or
 ``easy_install -U easy_date``
 
 There are no hard dependencies other than the Python standard library.
-It works with Python **2.7+** and **3.x**, but it wasn't tested on previous versions.
+It works with Python **2.6+** and **3.x**, but it wasn't tested on previous versions.
 
 
 ### How do I convert dates? ###
@@ -35,7 +34,6 @@ It works with Python **2.7+** and **3.x**, but it wasn't tested on previous vers
 * Using **easy_date**
 
 ```
-#!python
 from datetime import date, datetime
 import easy_date
 
@@ -53,7 +51,6 @@ my_date = easy_date.convert_from_string(str_date, '%d/%m/%Y', None, date)
 * Using **date_converter**
 
 ```
-#!python
 from datetime import date, datetime
 from date_converter import Date_Converter
 
@@ -77,8 +74,6 @@ my_date = date_converter.string_to_date(str_date, '%d/%m/%Y')
 
 
 ```
-#!python
-
 #Acceptable types: (str, datetime.datetime, datetime.date, float)
 convert_from_string(string, current_format, to_format, to_type=str)
 
@@ -97,8 +92,6 @@ convert_from_timestamp(timestamp, to_format, to_type=str)
 * from **date_converter**
 
 ```
-#!python
-
 #from datetime.date
 date_to_datetime(from_date)
 date_to_string(from_date, to_format)
