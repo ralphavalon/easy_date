@@ -74,6 +74,13 @@ class ConverterTest(unittest.TestCase):
         self.assertEquals(self.expected_month, result.month)
         self.assertEquals(self.expected_day, result.day)
 
+        result = self.converter.string_to_datetime(self.test_date_string, '%d/%m/%Y')
+        self.assertEquals(datetime, type(result))
+        self.assertEquals(self.expected_year, result.year)
+        self.assertEquals(self.expected_month, result.month)
+        self.assertEquals(self.expected_day, result.day)
+
+
     def test_string_to_string(self):
         result = self.converter.string_to_string(self.test_date_string, '%d/%m/%Y', '%Y-%d-%m')
         self.assertEquals(str, type(result))
@@ -93,6 +100,14 @@ class ConverterTest(unittest.TestCase):
 
     def test_timestamp_to_datetime(self):
         result = self.converter.timestamp_to_datetime(self.test_timestamp, '%d/%m/%Y')
+        self.assertEquals(datetime, type(result))
+        self.assertEquals(self.expected_year, result.year)
+        self.assertEquals(self.expected_month, result.month)
+        self.assertEquals(self.expected_day, result.day)
+        self.assertEquals(0, result.hour)
+        self.assertEquals(0, result.minute)
+
+        result = self.converter.timestamp_to_datetime(self.test_timestamp)
         self.assertEquals(datetime, type(result))
         self.assertEquals(self.expected_year, result.year)
         self.assertEquals(self.expected_month, result.month)

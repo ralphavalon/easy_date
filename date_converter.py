@@ -39,8 +39,10 @@ def datetime_to_timestamp(from_datetime):
 def string_to_date(string, current_format):
     return datetime.strptime(string, current_format).date()
 
-def string_to_datetime(string, current_format, to_format):
-    return datetime.strptime(datetime.strptime(string, current_format).strftime(to_format), to_format)
+def string_to_datetime(string, current_format, to_format=None):
+    if to_format:
+        return datetime.strptime(datetime.strptime(string, current_format).strftime(to_format), to_format)
+    return datetime.strptime(string, current_format)
 
 def string_to_string(string, current_format, to_format):
     return datetime.strptime(string, current_format).strftime(to_format)
@@ -51,8 +53,10 @@ def string_to_timestamp(string, current_format):
 def timestamp_to_date(timestamp):
     return datetime.fromtimestamp(timestamp).date()
 
-def timestamp_to_datetime(timestamp, to_format):
-    return datetime.strptime(datetime.fromtimestamp(timestamp).strftime(to_format), to_format)
+def timestamp_to_datetime(timestamp, to_format=None):
+    if to_format:
+        return datetime.strptime(datetime.fromtimestamp(timestamp).strftime(to_format), to_format)
+    return datetime.fromtimestamp(timestamp)
 
 def timestamp_to_string(timestamp, to_format):
     return datetime.fromtimestamp(timestamp).strftime(to_format)
