@@ -8,7 +8,7 @@ License: MIT (see LICENSE.md for details)
 """
 
 __author__ = 'Raphael Amoedo' #a.k.a. Ralph Avalon
-__version__ = '0.1.3'
+__version__ = '0.1.4'
 __license__ = 'MIT'
 
 from datetime import date, datetime
