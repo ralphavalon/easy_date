@@ -8,7 +8,7 @@ Let's face it: there's no JodaTime for Python, and dealing with date, datetime, 
 
 ### Example - String to String ###
 
-```
+```python
 import easy_date
 
 str_date = '25/12/2014' #%d/%m/%Y
@@ -37,7 +37,7 @@ It works with Python **2.6+** and **3.x**, but it wasn't tested on previous vers
     
 * Using **easy_date**
 
-```
+```python
 from datetime import date, datetime
 import easy_date
 
@@ -58,7 +58,7 @@ my_date = easy_date.convert_from_string(str_date, '%d/%m/%Y', None, date)
    
 * Using **date_converter**
 
-```
+```python
 from datetime import date, datetime
 import date_converter
 
@@ -83,7 +83,7 @@ my_date = date_converter.string_to_date(str_date, '%d/%m/%Y')
 * from **easy_date**
 
 
-```
+```python
 #Acceptable types: (str, datetime.datetime, datetime.date, float)
 convert_from_string(string, current_format, to_format, to_type=str)
 
@@ -101,7 +101,7 @@ convert_from_timestamp(timestamp, to_format, to_type=str)
 
 * from **date_converter**
 
-```
+```python
 #from datetime.date
 date_to_datetime(from_date)
 date_to_string(from_date, to_format)
